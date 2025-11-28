@@ -1,0 +1,16 @@
+body { font-family: DejaVu Sans, sans-serif; font-size: 12px; }
+        .logo { width: 80px; }
+        .header, .footer { display: flex; justify-content: space-between; }
+        .tabela, .tabela th, .tabela td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+            text-align: center;
+        }
+        .tabela th { background-color: #f0f0f0; }
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .title { font-size: 16px; font-weight: bold; text-align: center; }

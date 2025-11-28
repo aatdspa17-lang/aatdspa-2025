@@ -1,0 +1,88 @@
+.main-content{
+    margin-top: 50px;
+}
+
+h2{
+    padding-left: 18vw;
+    font-size: 1.2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.h3{
+    text-align: center;
+    color: rgb(31, 74, 106);
+}
+
+section{
+    width: 70vw;
+    border: solid 1px rgb(31, 74, 106);
+    margin: auto;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 20px 24vw;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 18vw;        
+    height: 16vh;       
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s;
+    border: solid 1px rgb(31, 74, 106);
+
+    display: flex;                /* coloca ícone e texto na mesma linha */
+    align-items: center;          /* centraliza verticalmente */
+    justify-content: center;      /* centraliza horizontalmente */
+    gap: 10px;                    /* espaço entre ícone e texto */
+}
+
+.card span.material-icons {
+    font-size: 32px;              /* tamanho do ícone */
+    color: rgb(31, 74, 106);
+}
+
+.card h3 {
+    margin: 0;                    /* remove espaçamento extra */
+    color: rgb(31, 74, 106);
+    font-size: 1.2em;
+    text-align: left;
+}
+
+/* Efeito hover mantém o ícone também em branco */
+.card:hover {
+    transform: translateY(-1px);
+    background-color: rgb(41, 99, 143);
+    color: white;
+}
+
+.card:hover h3,
+.card:hover span.material-icons {
+    color: white;
+}
+
+.card p {
+    font-size: 16px;
+    color: rgb(31, 74, 106);
+}
+
+
+/* Ícone de voltar */
+.back-icon {
+    font-size: 30px; /* Tamanho maior para dar destaque */
+    font-variation-settings: 'FILL' 0, 'wght' 900, 'GRAD' 0, 'opsz' 24; /* peso 700 = mais negrito */
+    transform: scaleX(1.4);
+    vertical-align: middle;
+    color: rgb(31, 74, 106);
+    margin-left: -4vw;
+    margin-right: 1vw;
+    transition: color 0.3s;
+}

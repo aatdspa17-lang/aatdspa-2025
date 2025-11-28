@@ -1,0 +1,72 @@
+body { 
+        font-family: DejaVu Sans, sans-serif;
+        font-size: 12px; 
+    }
+    .logo { 
+        width: 80px;
+        float: left;
+        margin-right: 10px;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .org-info {
+        margin-right: auto;
+    }
+    .org-info p {
+        margin: 0;
+        line-height: 1.2;
+        margin-top: 20px;
+    }
+    .billing-info {
+        text-align: right;
+        margin-top: 2vh;
+    }
+    .billing-info p {
+        
+        line-height: 1.2;
+    }
+
+    .tabela, .tabela th, .tabela td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 6px;
+        text-align: center;
+        height: 3vh;
+    }
+
+    .tabela th {
+         background-color: #f0f0f0;
+    }
+    .box {
+        border-radius: 50px;
+        border: 1px solid black;
+        padding: 10px;
+        margin-top: 20px;
+        width: 550px;
+        height: 200px;
+        margin: auto;
+        margin-top: 80px;
+        text-indent: 30px;
+    }
+    .title { 
+        font-size: 16px; 
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .cordenada{
+        text-align: center;
+    }
+
+    .corpo{
+        margin-top: -35vh;
+        padding: 200px;
+    }
+
+
+    .ficha_cobranca{
+        margin-left: 30vw;
+    }

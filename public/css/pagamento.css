@@ -1,0 +1,185 @@
+/* ==============================
+   Estilo da página de Pagamento
+   ============================== */
+.pagamento-container {
+    width: 85%;
+    max-width: 900px;
+    margin: 80px auto;
+    font-family: 'Poppins', sans-serif;
+    color: #2d2d2d;
+}
+
+/* -------- Formulário principal -------- */
+.form-pagamento {
+    background: #fff;
+    border-radius: 16px;
+    padding: 35px 40px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.form-pagamento:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.form-pagamento label {
+    font-weight: 600;
+    color: #444;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-pagamento input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 10px 0 20px;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.form-pagamento input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.3);
+    outline: none;
+}
+
+.form-pagamento button {
+    background: linear-gradient(90deg, #007bff, #0062cc);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.form-pagamento button:hover {
+    background: linear-gradient(90deg, #0062cc, #004a99);
+}
+
+/* -------- Mensagens -------- */
+.mensagem-erro {
+    color: #d9534f;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mensagem-sucesso {
+    color: #28a745;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* -------- Dados do candidato -------- */
+.dados {
+    background: #fdfdfd;
+    padding: 30px 35px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    margin-top: 40px;
+    transition: 0.3s;
+}
+
+.dados:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.dados h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.dados ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dados li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.dados strong {
+    color: #222;
+}
+
+/* -------- Upload -------- */
+.upload-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.upload-container label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.upload-container input[type="file"] {
+    display: block;
+    margin: 0 auto 18px;
+    border: 1.5px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.3s;
+    width: 80%;
+}
+
+.upload-container input[type="file"]:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+.upload-container button {
+    background: linear-gradient(90deg, #28a745, #1e7e34);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.upload-container button:hover {
+    background: linear-gradient(90deg, #1e7e34, #155d27);
+}
+
+/* -------- Mensagem informativa -------- */
+.mensagem-info {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* -------- Responsividade -------- */
+@media (max-width: 600px) {
+    .pagamento-container {
+        width: 95%;
+        margin: 40px auto;
+    }
+
+    .form-pagamento,
+    .dados {
+        padding: 20px;
+    }
+
+    .upload-container input[type="file"] {
+        width: 100%;
+    }
+}

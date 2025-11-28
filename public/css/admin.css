@@ -1,0 +1,302 @@
+/* Layout geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #0a0434;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    height: 100vh;
+}
+
+.sidebar .logo {
+    padding-left: 3px;
+    width: 50px;
+}
+
+.sidebar .logo img {
+    margin-bottom: 10px;
+    width: 40px;
+    height: 8vh;
+}
+
+.sidebar .logo a{
+    text-decoration: none;
+    display: flex;
+}
+
+.sidebar .logo a h2{
+    margin-left: 15px;
+    margin-top: 7px;
+    color: rgb(128, 128, 128);
+}
+
+.sidebar .vazio {
+    height: 1px;
+    background-color: rgb(128, 128, 128);
+}
+
+.sidebar .menu{
+    margin-top: 10vh;
+}
+
+.sidebar .menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.sidebar .menu a:hover {
+    background: #1a155a;
+}
+
+
+.sidebar .menu .menu-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #999;
+    margin-bottom: 8px;
+    padding-left: 1vw;
+    margin-top: 5vw;
+}
+
+.sidebar .menu .logout {
+    color: red;
+    font-weight: bold;
+}
+
+/* Conteúdo */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Dashboard cards */
+.dashboard {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10vh;
+}
+
+.card {
+    flex: 1;
+    width: 15vw;
+    height: 25vh;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+
+.card p {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.green {
+    background: green;
+}
+
+.marron {
+    background: rgb(161, 34, 89);
+}
+
+.blue {
+    background: #204060;
+}
+
+.darkblue {
+    background: #0a0434;
+}
+
+/* Painel inferior */
+.panel {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.sidebar .menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    margin-left: 2vw;
+}
+
+.sidebar .menu a .material-icons {
+    font-size: 20px;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    padding-left: 10px;
+    margin: 5px 0;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu li a {
+    color: #ddd;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+
+.submenu.open {
+    display: block;
+    animation: slideDown 0.3s ease;
+}
+
+.submenu-toggle {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    padding-left: 2.5vw;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submenu-toggle .left {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* controla só a distância entre ícone e texto */
+}
+
+
+.submenu-toggle:hover {
+    background-color: #1a155a;
+}
+
+.submenu-toggle .arrow {
+    transition: transform 0.3s ease;
+}
+
+.submenu-toggle.active .arrow {
+    transform: rotate(180deg); /* seta para cima */
+}
+
+
+
+
+
+
+
+/* Estilos do modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .modal-content h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .btn-confirm {
+            background: red;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-cancel {
+            background: #555;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-confirm:hover {
+            background: darkred;
+        }
+
+        .btn-cancel:hover {
+            background: #333;
+        }
+
+       .card-header {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* centraliza o ícone + título */
+        gap: 5px; /* espaço entre ícone e texto */
+        margin-top: 20px;
+}
+
+.card-header .material-icons {
+    font-size: 30px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 17px;
+    padding: 0; /* remove o padding que estava a empurrar o título para baixo */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

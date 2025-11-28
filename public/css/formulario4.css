@@ -1,0 +1,141 @@
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+p#ficheiro{
+    margin-left: 30px;
+}
+
+.anexar {
+    font-family: 'Arial', sans-serif; /* Fonte do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #333; /* Cor do texto - cinza escuro */
+    margin-right: 70px; /* Alinhamento com os outros elementos */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    text-transform: uppercase; /* Transforma em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    position: relative; /* Para pseudo-elementos */
+}
+
+h3#nota{
+    margin-left: 30px;
+}
+
+.custom-upload {
+    width: 51vw;
+    height: 33vh;
+    border: 2px dashed #333;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.custom-upload input[type="file"] {
+    display: none;
+}
+
+
+.upload-text {
+    font-size: 20px;
+    color: rgb(31, 74, 106);
+    margin-top: -1vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none; /* esconde a checkbox padrão */
+}
+
+.checkmark {
+    width: 24px;
+    height: 24px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: transparent; /* ícone invisível até ser clicado */
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 2vw;
+    margin-top: -6vw;
+}
+
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+    background-color: rgb(31, 74, 106); /* azul ao marcar */
+    color: white;
+}
+
+.checkbox-container h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.file-preview-container {
+        display: none; /* Inicialmente oculto */
+        margin-top: 10px;
+        padding: 8px;
+        background: rgba(76, 175, 80, 0.1);
+        border-radius: 4px;
+    }
+    
+    .file-preview-link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: rgb(31, 74, 106);
+        text-decoration: none;
+        font-size: 14px;
+        word-break: break-all;
+    }
+    
+    .file-preview-link:hover {
+        text-decoration: underline;
+    }
+    
+    .file-preview-link .material-icons {
+        font-size: 18px;
+    }
+    
+    .delete-file {
+        cursor: pointer;
+        margin-left: auto;
+        color: #f44336;
+    }
+
+    /* Ícone de voltar */
+.back-icon {
+    font-size: 30px; /* Tamanho maior para dar destaque */
+    font-variation-settings: 'FILL' 0, 'wght' 900, 'GRAD' 0, 'opsz' 24; /* peso 700 = mais negrito */
+    transform: scaleX(1.4);
+    vertical-align: middle;
+    color: rgb(31, 74, 106);
+    margin-left: -4vw;
+    margin-right: 1vw;
+    transition: color 0.3s;
+}
+
+.upload-icon-img {
+    width: 10vw;
+    height: 20vh;
+    margin-left: 8vw;
+    vertical-align: middle;
+}

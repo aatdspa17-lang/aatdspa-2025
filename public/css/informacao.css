@@ -1,0 +1,41 @@
+/* Requisitos informações */
+
+#card-info {
+    padding: 0px 0;
+    padding-bottom: 50px;
+    column-gap: 100px;
+}
+
+#card-info > p {
+    text-align: center;
+    font-weight: bold;
+}
+article {
+    width: 90vw;
+    margin-bottom: 2em;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+} 
+#info-hr {
+    margin: 2em 0px;
+    width: 80%;
+}
+h3#primeiro, h3#terceiro, h3#segundo {
+    text-transform: uppercase; /*  Para garantir que o título fique sempre em letras maiscúlas */
+    margin-left: 5vw;
+}
+section#card-info{
+    width: 100%;
+    border: none;
+}
+
+section#card-info article ul li {
+    margin-bottom: .5em;
+    list-style-position: inside;
+    margin-left: 2vw;
+    
+}

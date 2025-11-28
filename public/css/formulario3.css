@@ -1,0 +1,93 @@
+input[type="checkbox"] {
+    width: 50px;
+}
+
+.checkmark {
+    width: 50px;
+    height: 24px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: transparent; /* ícone invisível até ser clicado */
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 1vw;
+}
+
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+    background-color: rgb(31, 74, 106); /* azul ao marcar */
+    color: white;
+}
+
+.checkbox-container h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.verificar{
+    background-color: rgba(242, 242, 242, 0.911);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px black;
+    margin-bottom: 10px;
+    width: 87vw;
+}
+
+.verificar h1{
+    margin-left: -9vw;
+}
+
+div#formularioTrabalho{
+    width: 87vw;
+    border: solid 1px rgb(210, 210, 210);
+    padding: 0px 10px 10px 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(241, 241, 241, 0.949);
+}
+
+div#formularioTrabalho h1{
+    margin-left: -9vw;
+}
+
+.checkbox-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+     
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.academic-form {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.academic-form input {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Ícone de voltar */
+.back-icon {
+    font-size: 30px; /* Tamanho maior para dar destaque */
+    font-variation-settings: 'FILL' 0, 'wght' 900, 'GRAD' 0, 'opsz' 24; /* peso 700 = mais negrito */
+    transform: scaleX(1.4);
+    vertical-align: middle;
+    color: rgb(31, 74, 106);
+    margin-left: -4vw;
+    margin-right: 1vw;
+    transition: color 0.3s;
+}

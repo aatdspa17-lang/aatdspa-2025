@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    /*background-color: rgba(218, 218, 218, 0.791);*/
+    background-color: rgb(40, 47, 66);
+}
+main{
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.63) 0px 10px 10px 0px;
+    width: 23vw;
+    height: 70vh;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+main div#login{
+    text-align: center;
+    margin-top: 32vh;
+}
+
+main div#login input#entrar{
+    height: 7vh;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 20vw;
+    background-color: rgb(29, 46, 61);
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+main div#login input#entrar:hover{
+    background-color: white;
+    color: rgba(29, 46, 61);
+}
+
+
+main div#imagem img{
+    position: absolute;
+    top: 25vh;
+    left: 45vw;
+    height:23vh;
+    width: 8vw;
+}
+
+
+/* Estilização básica dos inputs */
+#login input[type="email"], 
+#login input[type="password"] {
+    height: 7vh;
+    width: 20vw;
+    border: 1.5px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+#login input[type="email"]:focus, 
+#login input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Efeito hover para os ícones */
+.input-with-icon i {
+    transition: color 0.3s;
+    margin-left: 1vw;
+}
+
+.input-with-icon:hover i {
+    color: #4CAF50;
+}
+
+/* Estilos adicionais para os inputs com ícones */
+    .input-with-icon {
+        position: relative;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .input-with-icon i {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #555;
+    }
+    
+    .input-with-icon input {
+        width: 100%;
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+
+    .error-dialog {
+    background: #ffdddd;
+    color: #a94442;
+    border: 1px solid #a94442;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.error-dialog .material-icons {
+    color: #a94442;
+    font-size: 22px;
+}
+
+/* animação para a caixa aparecer suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
